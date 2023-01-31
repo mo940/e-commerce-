@@ -1,0 +1,195 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital@1&family=Alegreya+Sans:ital,wght@0,100;0,300;1,100;1,400&family=Alegreya:ital@1&family=Anek+Malayalam:wght@100&family=Montserrat:wght@100&family=Poppins:ital,wght@0,100;0,200;0,500;1,500&family=Roboto+Mono:wght@300&family=Roboto:ital,wght@1,500&family=Rubik:wght@300&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>SHOP-EMMA</title>
+</head>
+
+<body class="sig">
+
+
+    <!-- first-navbar -->
+
+    <nav class="navbar navbar-expand-lg fixed-top first-navbar ">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="aboutUS.html">About US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="career.html">Careers</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- secon-navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light secon-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img/brand.png" alt="" class="w-75" height="70"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="show.html">SHOP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CART</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li>
+                        <a href="https://www.facebook.com/friendsofemma" target="_blank"><i
+                                class="fa-brands fa-facebook pe-2"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/your_emma_/" target="_blank">
+                            <i class="fa-brands fa-instagram pe-2"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/@your.emma" target="_blank"><i
+                                class="fa-brands fa-tiktok pe-2"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/YOUR_EMMA_" target="_blank"><i
+                                class="fa-brands fa-twitter pe-2"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.pinterest.com/your_emma_/" target="_blank"><i
+                                class="fa-brands fa-pinterest pe-2"></i></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UClkI5zx45XKW9hVo2I1VsYg" target="_blank"><i
+                                class="fa-brands fa-youtube pe-2"></i></a>
+                    </li>
+                </ul>
+                <a href="signUP.html">
+                    <p class="ps-3 home-log">Login/Register </p>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="title">
+        <p class="myacc">MY ACCOUNT</p>
+    </div>
+
+    <div>
+        <p class="login">LOGIN</p>
+
+        <form class="form" action="index.html">
+            <label class="textinput" for="fname">Username or email address*</label><br><br>
+            <input class="textbox" type="text" id="userid" name="ID"><br><br>
+
+            <label class="textinput" for="fname">Password*</label><br><br>
+            <input onblur="password()" class="textbox" type="password" id="userpassword" name="ID"><br><br>
+
+            <input class="radio" type="checkbox">
+            <label class="textinput"> Remember me</label><br><br>
+            <button onblur="regFulName()" class="btn">LOG In</button><br><br>
+            <div id="msg"
+                style="color: rgb(197, 53, 53); font-size: 15px;position: absolute;top: 25%;left: auto; visibility:hidden;">
+                Error: Invalid Username</div>
+
+            <a class="forgetpass" href="#lostpass">Lost your password?</a>
+    </div>
+
+    <div class="vertical" style="position: absolute; color: #ddd;left: 50%;top: 28%; height: 50%;"></div>
+
+    <div>
+        <p class="register">REGISTER</p>
+
+        <form class="register" method="get" action="index.html">
+
+            <label class="textinput2" for="fname" style="position: absolute;top: 32%;left: 52%;">Email
+                address*</label><br><br>
+            <input onblur="ValidateEmail()" class="textbox2" id="emailaddress" type="email"
+                style="position: absolute;top: 36.8%;left: 52%;"><br><br>
+
+            <label class="textinput2" for="fname"
+                style="position: absolute;top: 45%;left: 52%;">Password*</label><br><br>
+            <input onblur="password()" class="textbox2" type="password" id="userpassword"
+                style="position: absolute;top:49.5%;left: 52%;"><br><br>
+            <br>
+
+            <label class="textinput2" for="fname" style="position: absolute;top: 57.8%;left: 52%;">Date of
+                birth</label><br><br>
+            <input class="textbox2" type="date" style="position: absolute;top:62.3%;left: 52%;"><br><br>
+
+            <button onclick="ValidateEmail()" class="btn"
+                style="position: absolute;top: 71%;left: 52%;">REGISTER</button><br><br>
+            <div id="msg3"
+                style="color: rgb(197, 53, 53); font-size: 15px; visibility:hidden;position: absolute; top: 42%; left: 52%;">
+                Error:Invalid Email address</div>
+
+    </div>
+
+    <div class="content"></div>
+
+    <div class="foot-up">
+        <p class="abo">
+            ABOUT US
+        </p><br>
+        <hr class="hr-abo">
+        <p class="abo2" style="top:15%;">
+            EMMA is a community bringing a fresh and
+        </p><br>
+        <p class="abo2" style="top: 20%;">
+            modern look to the modest fashion scene.
+        </p>
+        <div class="social2">
+            <a href="https://www.facebook.com/friendsofemma" target="_blank"><i
+                    class="fa-brands fa-facebook pe-2"></i></a>
+            <a href="https://www.instagram.com/your_emma_/" target="_blank">
+                <i class="fa-brands fa-instagram pe-2"></i></a>
+            <a href="https://www.tiktok.com/@your.emma" target="_blank"><i class="fa-brands fa-tiktok pe-2"></i></a>
+            <a href="https://twitter.com/YOUR_EMMA_" target="_blank"><i class="fa-brands fa-twitter pe-2"></i></a>
+            <a href="https://www.pinterest.com/your_emma_/" target="_blank"><i
+                    class="fa-brands fa-pinterest pe-2"></i></i></a>
+            <a href="https://www.youtube.com/channel/UClkI5zx45XKW9hVo2I1VsYg" target="_blank"><i
+                    class="fa-brands fa-youtube pe-2"></i></a>
+        </div>
+        <p class="contact-about">Contact Us
+        </p>
+        <a class="email" href="#email">info@youremma.com</a>
+    </div>
+    <div id="foot">Copyright 2023 © EMMA</div>
+
+
+    <script src="bootstrap-5.3.0-alpha1-dist/bootstrap.bundle.min.js"></script>
+    <script src="jquery/jquery-3.6.3.min.js"></script>
+    <script src="JS.js" type="module" type="text/javascript"></script>
+</body>
+
+</html>
